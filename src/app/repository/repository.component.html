@@ -15,19 +15,19 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="{{ user.avatar_url }}" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title"> Name:Priscilla Ungai {{ user.name}}</h5>
+                  <h5 class="card-title" *ngIf="user.name"> Name: {{ user.name}}</h5>
                   <p class="card-text">Username: {{ user.login }}</p>
                   <a href="{{user.html_url}}" class="btn btn-primary">View Github</a>
                 </div>
               </div><br>
             
-        <div>
+            </div>
             <div class="col-md-6">
                     <button class="btn btn-primary"> Following: {{user.following}}</button><br><br>
                 
                    <button class="btn btn-warning"> followers: {{user.followers}}</button>
             </div>
-        </div><br>
+        <br>
 
     </div>
     <div class="row" >
@@ -38,7 +38,7 @@
                   <h6 class="card-subtitle mb-2 text-muted">Creatd at:{{user.created_at}} </h6>
                   <p class="card-text">{{repos.description}}</p>
                   
-                  <a href="{{user.repos_url}}" class="card-link">View more</a>
+                  <a href="{{user.html_url}}" class="card-link">View more</a>
                 </div>
               </div>
         </div>

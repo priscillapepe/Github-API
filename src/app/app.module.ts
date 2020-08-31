@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GithubSearchComponent } from './github-search/github-search.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { RepositoryComponent } from './repository/repository.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GithubSearchComponent
+    NavbarComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

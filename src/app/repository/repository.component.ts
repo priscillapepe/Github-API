@@ -34,7 +34,7 @@ repo:Repository;
     )
   }
   ngOnInit(): void {
-    this.getRepo("priscillapepe")
+    this.getRepo("costamay")
   }
 
 }
